@@ -16,11 +16,11 @@ else:
 
 
 #	Cat shard
-# print( '\n\n#######################################\n\n' )
-# print( '** Cat shards **\n' )
-# response = requests.get( 'http://localhost:9200/_cat/shards?v=true' )
-# if response.status_code == 200:
-# 	print( response.content.decode() )
+print( '\n\n#######################################\n\n' )
+print( '** Cat shards **\n' )
+response = requests.get( 'http://localhost:9200/_cat/shards?v=true' )
+if response.status_code == 200:
+	print( response.content.decode() )
 
 print( '\n\n#######################################\n\n' )
 
